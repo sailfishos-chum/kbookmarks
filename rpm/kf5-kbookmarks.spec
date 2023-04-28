@@ -1,13 +1,12 @@
 %global kf5_version 5.105.0
-%global framework kbookmarks
 
-Name: opt-kf5-%{framework}
+Name: opt-kf5-kbookmarks
 Version: 5.105.0
 Release: 1%{?dist}
 Summary: KDE Frameworks 5 Tier 3 addon for bookmarks manipulation
 
 License: LGPLv2+
-URL:     https://invent.kde.org/frameworks/%{framework}
+URL:     https://invent.kde.org/frameworks/kbookmarks
 Source0: %{name}-%{version}.tar.bz2
 
 %{?opt_kf5_default_filter}
@@ -76,7 +75,7 @@ popd
 %files
 %doc README.md
 %license LICENSES/*.txt
-%{_opt_kf5_datadir}/qlogging-categories5/%{framework}.*
+%{_opt_kf5_datadir}/qlogging-categories5/kbookmarks.*
 %{_opt_kf5_libdir}/libKF5Bookmarks.so.*
 %{_opt_kf5_datadir}/locale/
 
